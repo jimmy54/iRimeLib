@@ -1,0 +1,1976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C2C2B6E1CFD857D0027259E /* boost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2C2B6D1CFD857D0027259E /* boost.framework */; };
+		0C92657C1DC255FF00D0297C /* boost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2C2B6D1CFD857D0027259E /* boost.framework */; };
+		0C93D6E21CFF171F00DDFCD0 /* swiftKeyBoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0C93D6DB1CFF171E00DDFCD0 /* swiftKeyBoard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0CAD24791D608307007EE8C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAD24771D608307007EE8C0 /* Main.storyboard */; };
+		0CAD24821D608485007EE8C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD24811D608485007EE8C0 /* main.m */; };
+		0CAD24851D608485007EE8C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD24841D608485007EE8C0 /* AppDelegate.m */; };
+		0CAD24881D608485007EE8C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD24871D608485007EE8C0 /* ViewController.m */; };
+		0CAD248B1D608485007EE8C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAD24891D608485007EE8C0 /* Main.storyboard */; };
+		0CAD248D1D608485007EE8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAD248C1D608485007EE8C0 /* Assets.xcassets */; };
+		0CAD24901D608485007EE8C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAD248E1D608485007EE8C0 /* LaunchScreen.storyboard */; };
+		0CAD249B1D608486007EE8C0 /* TestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD249A1D608486007EE8C0 /* TestAppTests.m */; };
+		0CAD24A61D608486007EE8C0 /* TestAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD24A51D608486007EE8C0 /* TestAppUITests.m */; };
+		0CAD24B11D608496007EE8C0 /* liblibmarisa-trie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5D2601CFC7FEB001A48D6 /* liblibmarisa-trie.a */; };
+		0CAD24B21D608496007EE8C0 /* liblibopencc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5D2611CFC7FEB001A48D6 /* liblibopencc.a */; };
+		0CAD24B31D608496007EE8C0 /* liblibrime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5D2621CFC7FEB001A48D6 /* liblibrime.a */; };
+		0CAD24B41D608496007EE8C0 /* liblibyaml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5D2631CFC7FEB001A48D6 /* liblibyaml.a */; };
+		0CAD24B71D6084A2007EE8C0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2C2B081CFD6C770027259E /* libc++.tbd */; };
+		0CAD24BB1D6085C9007EE8C0 /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CAD832A1D115E0500DA88DB /* libleveldb.a */; };
+		0CAD24BC1D6085C9007EE8C0 /* libmemenv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CAD832B1D115E0600DA88DB /* libmemenv.a */; };
+		0CAD832C1D115E0600DA88DB /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CAD832A1D115E0500DA88DB /* libleveldb.a */; };
+		0CAD832D1D115E0600DA88DB /* libmemenv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CAD832B1D115E0600DA88DB /* libmemenv.a */; };
+		0CC5D22E1CFC7F99001A48D6 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0CC5D22D1CFC7F99001A48D6 /* main.mm */; };
+		0CC5D2311CFC7F99001A48D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC5D2301CFC7F99001A48D6 /* AppDelegate.m */; };
+		0CC5D2341CFC7F99001A48D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC5D2331CFC7F99001A48D6 /* ViewController.m */; };
+		0CC5D2391CFC7F99001A48D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC5D2381CFC7F99001A48D6 /* Assets.xcassets */; };
+		0CC5D23C1CFC7F99001A48D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC5D23A1CFC7F99001A48D6 /* LaunchScreen.storyboard */; };
+		0CC5D2471CFC7F99001A48D6 /* RimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC5D2461CFC7F99001A48D6 /* RimeTests.m */; };
+		0CC5D2521CFC7F99001A48D6 /* RimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC5D2511CFC7F99001A48D6 /* RimeUITests.m */; };
+		0CC5D2651CFC7FEB001A48D6 /* liblibmarisa-trie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5D2601CFC7FEB001A48D6 /* liblibmarisa-trie.a */; };
+		0CC5D2661CFC7FEB001A48D6 /* liblibopencc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5D2611CFC7FEB001A48D6 /* liblibopencc.a */; };
+		0CC5D2671CFC7FEB001A48D6 /* liblibrime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5D2621CFC7FEB001A48D6 /* liblibrime.a */; };
+		0CC5D2681CFC7FEB001A48D6 /* liblibyaml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5D2631CFC7FEB001A48D6 /* liblibyaml.a */; };
+		0CD1531C1D2CF27D003259B8 /* ForwardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD152F81D2CF27D003259B8 /* ForwardingView.swift */; };
+		0CD1531D1D2CF27D003259B8 /* KeyboardInputTraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD152F91D2CF27D003259B8 /* KeyboardInputTraits.swift */; };
+		0CD1531E1D2CF27D003259B8 /* KeyboardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD152FA1D2CF27D003259B8 /* KeyboardLayout.swift */; };
+		0CD1531F1D2CF27D003259B8 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD152FB1D2CF27D003259B8 /* KeyboardViewController.swift */; };
+		0CD153201D2CF27D003259B8 /* CandidateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD152FD1D2CF27D003259B8 /* CandidateModel.swift */; };
+		0CD153211D2CF27D003259B8 /* Catboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD152FE1D2CF27D003259B8 /* Catboard.swift */; };
+		0CD153221D2CF27D003259B8 /* CatboardBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD152FF1D2CF27D003259B8 /* CatboardBanner.swift */; };
+		0CD153231D2CF27D003259B8 /* CandidateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153011D2CF27D003259B8 /* CandidateCell.swift */; };
+		0CD153241D2CF27D003259B8 /* CandidatesBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153021D2CF27D003259B8 /* CandidatesBanner.swift */; };
+		0CD153251D2CF27D003259B8 /* CandidateTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153031D2CF27D003259B8 /* CandidateTableCellTableViewCell.swift */; };
+		0CD153261D2CF27D003259B8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153041D2CF27D003259B8 /* Logger.swift */; };
+		0CD153271D2CF27D003259B8 /* MyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153051D2CF27D003259B8 /* MyCollectionViewFlowLayout.swift */; };
+		0CD1532C1D2CF27D003259B8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1530B1D2CF27D003259B8 /* StringExtension.swift */; };
+		0CD1532D1D2CF27D003259B8 /* TypingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1530C1D2CF27D003259B8 /* TypingLabel.swift */; };
+		0CD1532E1D2CF27D003259B8 /* DefaultKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1530E1D2CF27D003259B8 /* DefaultKeyboard.swift */; };
+		0CD1532F1D2CF27D003259B8 /* DirectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1530F1D2CF27D003259B8 /* DirectionEnum.swift */; };
+		0CD153301D2CF27D003259B8 /* KeyboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153101D2CF27D003259B8 /* KeyboardModel.swift */; };
+		0CD153311D2CF27D003259B8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153121D2CF27D003259B8 /* Utilities.swift */; };
+		0CD153321D2CF27D003259B8 /* DefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153141D2CF27D003259B8 /* DefaultSettings.swift */; };
+		0CD153341D2CF27D003259B8 /* ExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153161D2CF27D003259B8 /* ExtraView.swift */; };
+		0CD153351D2CF27D003259B8 /* ImageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153171D2CF27D003259B8 /* ImageKey.swift */; };
+		0CD153361D2CF27D003259B8 /* KeyboardConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153181D2CF27D003259B8 /* KeyboardConnector.swift */; };
+		0CD153371D2CF27D003259B8 /* KeyboardKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153191D2CF27D003259B8 /* KeyboardKey.swift */; };
+		0CD153381D2CF27D003259B8 /* KeyboardKeyBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1531A1D2CF27D003259B8 /* KeyboardKeyBackground.swift */; };
+		0CD153391D2CF27D003259B8 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1531B1D2CF27D003259B8 /* Shapes.swift */; };
+		0CD153461D2CF2BA003259B8 /* NSString+UTF8Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153411D2CF2BA003259B8 /* NSString+UTF8Utils.m */; };
+		0CD153471D2CF2BA003259B8 /* RimeTypeDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153431D2CF2BA003259B8 /* RimeTypeDef.m */; };
+		0CD153481D2CF2BA003259B8 /* RimeWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153451D2CF2BA003259B8 /* RimeWrapper.m */; };
+		0CD153491D2CF2CD003259B8 /* liblibmarisa-trie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5D2601CFC7FEB001A48D6 /* liblibmarisa-trie.a */; };
+		0CD1534A1D2CF2CD003259B8 /* liblibopencc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5D2611CFC7FEB001A48D6 /* liblibopencc.a */; };
+		0CD1534B1D2CF2CD003259B8 /* liblibrime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5D2621CFC7FEB001A48D6 /* liblibrime.a */; };
+		0CD1534C1D2CF2CD003259B8 /* liblibyaml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5D2631CFC7FEB001A48D6 /* liblibyaml.a */; };
+		0CD1534F1D2CF2EA003259B8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2C2B081CFD6C770027259E /* libc++.tbd */; };
+		0CD153561D2CF448003259B8 /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD153541D2CF448003259B8 /* libleveldb.a */; };
+		0CD153571D2CF448003259B8 /* libmemenv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD153551D2CF448003259B8 /* libmemenv.a */; };
+		0CD1535B1D2CF558003259B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC5D2381CFC7F99001A48D6 /* Assets.xcassets */; };
+		0CD1535C1D2CF9B9003259B8 /* XIME in Resources */ = {isa = PBXBuildFile; fileRef = 0CAD83A41D115F0400DA88DB /* XIME */; };
+		0CD1535F1D2CFB16003259B8 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD1535E1D2CFB16003259B8 /* SnapKit.framework */; };
+		0CFD550A1D729ADC00646CA9 /* SelectInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFD55081D729ADC00646CA9 /* SelectInputViewController.m */; };
+		0CFD550B1D729ADC00646CA9 /* SelectInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CFD55091D729ADC00646CA9 /* SelectInputViewController.xib */; };
+		0CFD550C1D729B6200646CA9 /* RimeTypeDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153431D2CF2BA003259B8 /* RimeTypeDef.m */; };
+		0CFD550D1D729B6200646CA9 /* RimeWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD153451D2CF2BA003259B8 /* RimeWrapper.m */; };
+		0CFD55161D729D7D00646CA9 /* NSString+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFD55141D729D7D00646CA9 /* NSString+Path.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C93D6E01CFF171F00DDFCD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC5D2211CFC7F99001A48D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C93D6DA1CFF171E00DDFCD0;
+			remoteInfo = swiftKeyBoard;
+		};
+		0CAD24971D608485007EE8C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC5D2211CFC7F99001A48D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CAD247D1D608484007EE8C0;
+			remoteInfo = TestApp;
+		};
+		0CAD24A21D608486007EE8C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC5D2211CFC7F99001A48D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CAD247D1D608484007EE8C0;
+			remoteInfo = TestApp;
+		};
+		0CC5D2431CFC7F99001A48D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC5D2211CFC7F99001A48D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CC5D2281CFC7F99001A48D6;
+			remoteInfo = Rime;
+		};
+		0CC5D24E1CFC7F99001A48D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC5D2211CFC7F99001A48D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CC5D2281CFC7F99001A48D6;
+			remoteInfo = Rime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0CB0ED9B1CFF0D2400F2ACD9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0C93D6E21CFF171F00DDFCD0 /* swiftKeyBoard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C2C2B081CFD6C770027259E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0C2C2B6D1CFD857D0027259E /* boost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = boost.framework; path = ../../../T9/build_boot_for_iOS_script/ios/framework/boost.framework; sourceTree = "<group>"; };
+		0C93D6DB1CFF171E00DDFCD0 /* swiftKeyBoard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = swiftKeyBoard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C93D6DF1CFF171F00DDFCD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CAD24781D608307007EE8C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CAD247E1D608484007EE8C0 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAD24811D608485007EE8C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0CAD24831D608485007EE8C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0CAD24841D608485007EE8C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0CAD24861D608485007EE8C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0CAD24871D608485007EE8C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0CAD248A1D608485007EE8C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CAD248C1D608485007EE8C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CAD248F1D608485007EE8C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CAD24911D608485007EE8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CAD24961D608485007EE8C0 /* TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAD249A1D608486007EE8C0 /* TestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAppTests.m; sourceTree = "<group>"; };
+		0CAD249C1D608486007EE8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CAD24A11D608486007EE8C0 /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAD24A51D608486007EE8C0 /* TestAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAppUITests.m; sourceTree = "<group>"; };
+		0CAD24A71D608486007EE8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CAD82B11D115C3300DA88DB /* t2s.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t2s.json; sourceTree = "<group>"; };
+		0CAD82B21D115C3300DA88DB /* TSCharacters.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = TSCharacters.ocd; sourceTree = "<group>"; };
+		0CAD82B31D115C3300DA88DB /* TSPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = TSPhrases.ocd; sourceTree = "<group>"; };
+		0CAD82B51D115C3300DA88DB /* default.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = default.yaml; sourceTree = "<group>"; };
+		0CAD82B61D115C3300DA88DB /* essay.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = essay.txt; sourceTree = "<group>"; };
+		0CAD82B81D115C3300DA88DB /* array30.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = array30.dict.yaml; sourceTree = "<group>"; };
+		0CAD82B91D115C3300DA88DB /* array30.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = array30.schema.yaml; sourceTree = "<group>"; };
+		0CAD82BA1D115C3300DA88DB /* scj6.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scj6.dict.yaml; sourceTree = "<group>"; };
+		0CAD82BB1D115C3300DA88DB /* scj6.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scj6.schema.yaml; sourceTree = "<group>"; };
+		0CAD82BC1D115C3300DA88DB /* stenotype.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stenotype.schema.yaml; sourceTree = "<group>"; };
+		0CAD82BD1D115C3300DA88DB /* wubi_trad.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wubi_trad.schema.yaml; sourceTree = "<group>"; };
+		0CAD82BF1D115C3300DA88DB /* bopomofo.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bopomofo.schema.yaml; sourceTree = "<group>"; };
+		0CAD82C01D115C3300DA88DB /* bopomofo_tw.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bopomofo_tw.schema.yaml; sourceTree = "<group>"; };
+		0CAD82C11D115C3300DA88DB /* cangjie5.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cangjie5.dict.yaml; sourceTree = "<group>"; };
+		0CAD82C21D115C3300DA88DB /* cangjie5.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cangjie5.schema.yaml; sourceTree = "<group>"; };
+		0CAD82C31D115C3300DA88DB /* cangjie5_express.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cangjie5_express.schema.yaml; sourceTree = "<group>"; };
+		0CAD82C41D115C3300DA88DB /* luna_pinyin.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin.dict.yaml; sourceTree = "<group>"; };
+		0CAD82C51D115C3300DA88DB /* luna_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CAD82C61D115C3300DA88DB /* luna_pinyin_fluency.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_fluency.schema.yaml; sourceTree = "<group>"; };
+		0CAD82C71D115C3300DA88DB /* luna_pinyin_simp.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_simp.schema.yaml; sourceTree = "<group>"; };
+		0CAD82C81D115C3300DA88DB /* luna_pinyin_tw.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_tw.schema.yaml; sourceTree = "<group>"; };
+		0CAD82C91D115C3300DA88DB /* stroke.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stroke.dict.yaml; sourceTree = "<group>"; };
+		0CAD82CA1D115C3300DA88DB /* stroke.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stroke.schema.yaml; sourceTree = "<group>"; };
+		0CAD82CB1D115C3300DA88DB /* terra_pinyin.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terra_pinyin.dict.yaml; sourceTree = "<group>"; };
+		0CAD82CC1D115C3300DA88DB /* terra_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terra_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CAD82CE1D115C3300DA88DB /* combo_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = combo_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CAD82CF1D115C3300DA88DB /* double_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = double_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CAD82D01D115C3300DA88DB /* double_pinyin_abc.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = double_pinyin_abc.schema.yaml; sourceTree = "<group>"; };
+		0CAD82D11D115C3300DA88DB /* double_pinyin_flypy.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = double_pinyin_flypy.schema.yaml; sourceTree = "<group>"; };
+		0CAD82D21D115C3300DA88DB /* double_pinyin_mspy.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = double_pinyin_mspy.schema.yaml; sourceTree = "<group>"; };
+		0CAD82D31D115C3300DA88DB /* emoji.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emoji.dict.yaml; sourceTree = "<group>"; };
+		0CAD82D41D115C3300DA88DB /* emoji.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emoji.schema.yaml; sourceTree = "<group>"; };
+		0CAD82D51D115C3300DA88DB /* ipa_xsampa.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ipa_xsampa.dict.yaml; sourceTree = "<group>"; };
+		0CAD82D61D115C3300DA88DB /* ipa_xsampa.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ipa_xsampa.schema.yaml; sourceTree = "<group>"; };
+		0CAD82D71D115C3300DA88DB /* jyutping.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jyutping.dict.yaml; sourceTree = "<group>"; };
+		0CAD82D81D115C3300DA88DB /* jyutping.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jyutping.schema.yaml; sourceTree = "<group>"; };
+		0CAD82D91D115C3300DA88DB /* pinyin_simp.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pinyin_simp.dict.yaml; sourceTree = "<group>"; };
+		0CAD82DA1D115C3300DA88DB /* pinyin_simp.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pinyin_simp.schema.yaml; sourceTree = "<group>"; };
+		0CAD82DB1D115C3300DA88DB /* quick5.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quick5.dict.yaml; sourceTree = "<group>"; };
+		0CAD82DC1D115C3300DA88DB /* quick5.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quick5.schema.yaml; sourceTree = "<group>"; };
+		0CAD82DD1D115C3300DA88DB /* sampheng.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sampheng.schema.yaml; sourceTree = "<group>"; };
+		0CAD82DE1D115C3300DA88DB /* soutzoe.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = soutzoe.dict.yaml; sourceTree = "<group>"; };
+		0CAD82DF1D115C3300DA88DB /* soutzoe.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = soutzoe.schema.yaml; sourceTree = "<group>"; };
+		0CAD82E01D115C3300DA88DB /* wubi86.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wubi86.dict.yaml; sourceTree = "<group>"; };
+		0CAD82E11D115C3300DA88DB /* wubi86.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wubi86.schema.yaml; sourceTree = "<group>"; };
+		0CAD82E21D115C3300DA88DB /* wubi_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wubi_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CAD82E31D115C3300DA88DB /* wugniu.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wugniu.schema.yaml; sourceTree = "<group>"; };
+		0CAD82E41D115C3300DA88DB /* wugniu_lopha.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wugniu_lopha.dict.yaml; sourceTree = "<group>"; };
+		0CAD82E51D115C3300DA88DB /* wugniu_lopha.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wugniu_lopha.schema.yaml; sourceTree = "<group>"; };
+		0CAD82E61D115C3300DA88DB /* zyenpheng.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zyenpheng.dict.yaml; sourceTree = "<group>"; };
+		0CAD82E71D115C3300DA88DB /* zyenpheng.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zyenpheng.schema.yaml; sourceTree = "<group>"; };
+		0CAD82E81D115C3300DA88DB /* symbols.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = symbols.yaml; sourceTree = "<group>"; };
+		0CAD82E91D115C3300DA88DB /* XIME_Icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = XIME_Icon.tiff; sourceTree = "<group>"; };
+		0CAD832A1D115E0500DA88DB /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libleveldb.a; sourceTree = "<group>"; };
+		0CAD832B1D115E0600DA88DB /* libmemenv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmemenv.a; sourceTree = "<group>"; };
+		0CAD83A41D115F0400DA88DB /* XIME */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XIME; sourceTree = "<group>"; };
+		0CB0ED951CFF0D2400F2ACD9 /* RimeKeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RimeKeyboardViewController.h; sourceTree = "<group>"; };
+		0CB0ED961CFF0D2400F2ACD9 /* RimeKeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RimeKeyboardViewController.m; sourceTree = "<group>"; };
+		0CB0ED981CFF0D2400F2ACD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CC5D2291CFC7F99001A48D6 /* Rime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC5D22D1CFC7F99001A48D6 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		0CC5D22F1CFC7F99001A48D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0CC5D2301CFC7F99001A48D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0CC5D2321CFC7F99001A48D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0CC5D2331CFC7F99001A48D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0CC5D2381CFC7F99001A48D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CC5D23B1CFC7F99001A48D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CC5D23D1CFC7F99001A48D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CC5D2421CFC7F99001A48D6 /* RimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC5D2461CFC7F99001A48D6 /* RimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RimeTests.m; sourceTree = "<group>"; };
+		0CC5D2481CFC7F99001A48D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CC5D24D1CFC7F99001A48D6 /* RimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC5D2511CFC7F99001A48D6 /* RimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RimeUITests.m; sourceTree = "<group>"; };
+		0CC5D2531CFC7F99001A48D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CC5D2601CFC7FEB001A48D6 /* liblibmarisa-trie.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liblibmarisa-trie.a"; path = "../../../../../Library/Developer/Xcode/DerivedData/iOSRime-czpggaixlfgtpdftgcocoslnmykl/Build/Products/Debug-iphoneos/liblibmarisa-trie.a"; sourceTree = "<group>"; };
+		0CC5D2611CFC7FEB001A48D6 /* liblibopencc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibopencc.a; path = "../../../../../Library/Developer/Xcode/DerivedData/iOSRime-czpggaixlfgtpdftgcocoslnmykl/Build/Products/Debug-iphoneos/liblibopencc.a"; sourceTree = "<group>"; };
+		0CC5D2621CFC7FEB001A48D6 /* liblibrime.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibrime.a; path = "../../../../../Library/Developer/Xcode/DerivedData/iOSRime-czpggaixlfgtpdftgcocoslnmykl/Build/Products/Debug-iphoneos/liblibrime.a"; sourceTree = "<group>"; };
+		0CC5D2631CFC7FEB001A48D6 /* liblibyaml.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibyaml.a; path = "../../../../../Library/Developer/Xcode/DerivedData/iOSRime-czpggaixlfgtpdftgcocoslnmykl/Build/Products/Debug-iphoneos/liblibyaml.a"; sourceTree = "<group>"; };
+		0CD151D51D2CF259003259B8 /* cangjie5.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cangjie5.schema.yaml; sourceTree = "<group>"; };
+		0CD151D61D2CF259003259B8 /* default.custom.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = default.custom.yaml; sourceTree = "<group>"; };
+		0CD151D71D2CF259003259B8 /* default.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = default.yaml; sourceTree = "<group>"; };
+		0CD151D81D2CF259003259B8 /* installation.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = installation.yaml; sourceTree = "<group>"; };
+		0CD151D91D2CF259003259B8 /* luna_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CD151DB1D2CF259003259B8 /* 000005.ldb */ = {isa = PBXFileReference; lastKnownFileType = file; path = 000005.ldb; sourceTree = "<group>"; };
+		0CD151DC1D2CF259003259B8 /* 000010.ldb */ = {isa = PBXFileReference; lastKnownFileType = file; path = 000010.ldb; sourceTree = "<group>"; };
+		0CD151DD1D2CF259003259B8 /* 000011.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 000011.log; sourceTree = "<group>"; };
+		0CD151DE1D2CF259003259B8 /* CURRENT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CURRENT; sourceTree = "<group>"; };
+		0CD151DF1D2CF259003259B8 /* LOCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LOCK; sourceTree = "<group>"; };
+		0CD151E01D2CF259003259B8 /* LOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LOG; sourceTree = "<group>"; };
+		0CD151E11D2CF259003259B8 /* LOG.old */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LOG.old; sourceTree = "<group>"; };
+		0CD151E21D2CF259003259B8 /* MANIFEST-000009 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MANIFEST-000009"; sourceTree = "<group>"; };
+		0CD151E31D2CF259003259B8 /* luna_pinyin_fluency.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_fluency.schema.yaml; sourceTree = "<group>"; };
+		0CD151E41D2CF259003259B8 /* luna_pinyin_simp.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_simp.schema.yaml; sourceTree = "<group>"; };
+		0CD151E51D2CF259003259B8 /* luna_pinyin_tw.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_tw.schema.yaml; sourceTree = "<group>"; };
+		0CD151E61D2CF259003259B8 /* pinyin_simp.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = pinyin_simp.prism.bin; sourceTree = "<group>"; };
+		0CD151E71D2CF259003259B8 /* pinyin_simp.reverse.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = pinyin_simp.reverse.bin; sourceTree = "<group>"; };
+		0CD151E81D2CF259003259B8 /* pinyin_simp.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pinyin_simp.schema.yaml; sourceTree = "<group>"; };
+		0CD151E91D2CF259003259B8 /* pinyin_simp.table.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = pinyin_simp.table.bin; sourceTree = "<group>"; };
+		0CD151EA1D2CF259003259B8 /* squirrel.custom.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = squirrel.custom.yaml; sourceTree = "<group>"; };
+		0CD151EB1D2CF259003259B8 /* squirrel.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = squirrel.yaml; sourceTree = "<group>"; };
+		0CD151EC1D2CF259003259B8 /* stroke.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stroke.schema.yaml; sourceTree = "<group>"; };
+		0CD151ED1D2CF259003259B8 /* symbols.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = symbols.yaml; sourceTree = "<group>"; };
+		0CD151F01D2CF259003259B8 /* cangjie5.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cangjie5.schema.yaml; sourceTree = "<group>"; };
+		0CD151F11D2CF259003259B8 /* default.custom.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = default.custom.yaml; sourceTree = "<group>"; };
+		0CD151F21D2CF259003259B8 /* installation.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = installation.yaml; sourceTree = "<group>"; };
+		0CD151F31D2CF259003259B8 /* luna_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CD151F41D2CF259003259B8 /* luna_pinyin.userdb.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin.userdb.txt; sourceTree = "<group>"; };
+		0CD151F51D2CF259003259B8 /* luna_pinyin_fluency.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_fluency.schema.yaml; sourceTree = "<group>"; };
+		0CD151F61D2CF259003259B8 /* luna_pinyin_simp.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_simp.schema.yaml; sourceTree = "<group>"; };
+		0CD151F71D2CF259003259B8 /* luna_pinyin_tw.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_tw.schema.yaml; sourceTree = "<group>"; };
+		0CD151F81D2CF259003259B8 /* pinyin_simp.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pinyin_simp.schema.yaml; sourceTree = "<group>"; };
+		0CD151F91D2CF259003259B8 /* squirrel.custom.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = squirrel.custom.yaml; sourceTree = "<group>"; };
+		0CD151FA1D2CF259003259B8 /* stroke.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stroke.schema.yaml; sourceTree = "<group>"; };
+		0CD151FB1D2CF259003259B8 /* symbols.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = symbols.yaml; sourceTree = "<group>"; };
+		0CD151FC1D2CF259003259B8 /* wubi86.userdb.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wubi86.userdb.txt; sourceTree = "<group>"; };
+		0CD151FD1D2CF259003259B8 /* wubi_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wubi_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CD151FE1D2CF259003259B8 /* wubi86.reverse.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = wubi86.reverse.bin; sourceTree = "<group>"; };
+		0CD151FF1D2CF259003259B8 /* wubi86.table.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = wubi86.table.bin; sourceTree = "<group>"; };
+		0CD152011D2CF259003259B8 /* 000059.ldb */ = {isa = PBXFileReference; lastKnownFileType = file; path = 000059.ldb; sourceTree = "<group>"; };
+		0CD152021D2CF259003259B8 /* 000061.ldb */ = {isa = PBXFileReference; lastKnownFileType = file; path = 000061.ldb; sourceTree = "<group>"; };
+		0CD152031D2CF259003259B8 /* 000066.log */ = {isa = PBXFileReference; lastKnownFileType = file; path = 000066.log; sourceTree = "<group>"; };
+		0CD152041D2CF259003259B8 /* CURRENT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CURRENT; sourceTree = "<group>"; };
+		0CD152051D2CF259003259B8 /* LOCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LOCK; sourceTree = "<group>"; };
+		0CD152061D2CF259003259B8 /* LOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LOG; sourceTree = "<group>"; };
+		0CD152071D2CF259003259B8 /* LOG.old */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LOG.old; sourceTree = "<group>"; };
+		0CD152081D2CF259003259B8 /* MANIFEST-000065 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MANIFEST-000065"; sourceTree = "<group>"; };
+		0CD152091D2CF259003259B8 /* wubi_pinyin.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = wubi_pinyin.prism.bin; sourceTree = "<group>"; };
+		0CD1520A1D2CF259003259B8 /* wubi_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wubi_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CD1520C1D2CF259003259B8 /* cangjie5.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = cangjie5.prism.bin; sourceTree = "<group>"; };
+		0CD1520D1D2CF259003259B8 /* cangjie5.reverse.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = cangjie5.reverse.bin; sourceTree = "<group>"; };
+		0CD1520E1D2CF259003259B8 /* cangjie5.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cangjie5.schema.yaml; sourceTree = "<group>"; };
+		0CD1520F1D2CF259003259B8 /* cangjie5.table.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = cangjie5.table.bin; sourceTree = "<group>"; };
+		0CD152101D2CF259003259B8 /* default.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = default.yaml; sourceTree = "<group>"; };
+		0CD152111D2CF259003259B8 /* installation.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = installation.yaml; sourceTree = "<group>"; };
+		0CD152121D2CF259003259B8 /* luna_pinyin.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = luna_pinyin.prism.bin; sourceTree = "<group>"; };
+		0CD152131D2CF259003259B8 /* luna_pinyin.reverse.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = luna_pinyin.reverse.bin; sourceTree = "<group>"; };
+		0CD152141D2CF259003259B8 /* luna_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CD152151D2CF259003259B8 /* luna_pinyin.table.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = luna_pinyin.table.bin; sourceTree = "<group>"; };
+		0CD152161D2CF259003259B8 /* luna_pinyin.userdb.kct */ = {isa = PBXFileReference; lastKnownFileType = file; path = luna_pinyin.userdb.kct; sourceTree = "<group>"; };
+		0CD152171D2CF259003259B8 /* luna_pinyin.userdb.kct.wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = luna_pinyin.userdb.kct.wal; sourceTree = "<group>"; };
+		0CD152181D2CF259003259B8 /* luna_pinyin_fluency.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = luna_pinyin_fluency.prism.bin; sourceTree = "<group>"; };
+		0CD152191D2CF259003259B8 /* luna_pinyin_fluency.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_fluency.schema.yaml; sourceTree = "<group>"; };
+		0CD1521A1D2CF259003259B8 /* luna_pinyin_simp.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = luna_pinyin_simp.prism.bin; sourceTree = "<group>"; };
+		0CD1521B1D2CF259003259B8 /* luna_pinyin_simp.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_simp.schema.yaml; sourceTree = "<group>"; };
+		0CD1521C1D2CF259003259B8 /* luna_pinyin_tw.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = luna_pinyin_tw.prism.bin; sourceTree = "<group>"; };
+		0CD1521D1D2CF259003259B8 /* luna_pinyin_tw.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_tw.schema.yaml; sourceTree = "<group>"; };
+		0CD1521E1D2CF259003259B8 /* stroke.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = stroke.prism.bin; sourceTree = "<group>"; };
+		0CD1521F1D2CF259003259B8 /* stroke.reverse.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = stroke.reverse.bin; sourceTree = "<group>"; };
+		0CD152201D2CF259003259B8 /* stroke.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stroke.schema.yaml; sourceTree = "<group>"; };
+		0CD152211D2CF259003259B8 /* stroke.table.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = stroke.table.bin; sourceTree = "<group>"; };
+		0CD152221D2CF259003259B8 /* symbols.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = symbols.yaml; sourceTree = "<group>"; };
+		0CD152241D2CF259003259B8 /* bopomofo.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bopomofo.schema.yaml; sourceTree = "<group>"; };
+		0CD152251D2CF259003259B8 /* bopomofo_tw.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bopomofo_tw.schema.yaml; sourceTree = "<group>"; };
+		0CD152261D2CF259003259B8 /* cangjie5.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cangjie5.dict.yaml; sourceTree = "<group>"; };
+		0CD152271D2CF259003259B8 /* cangjie5.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = cangjie5.prism.bin; sourceTree = "<group>"; };
+		0CD152281D2CF259003259B8 /* cangjie5.reverse.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = cangjie5.reverse.bin; sourceTree = "<group>"; };
+		0CD152291D2CF259003259B8 /* cangjie5.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cangjie5.schema.yaml; sourceTree = "<group>"; };
+		0CD1522A1D2CF259003259B8 /* cangjie5.table.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = cangjie5.table.bin; sourceTree = "<group>"; };
+		0CD1522B1D2CF259003259B8 /* cangjie5_express.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cangjie5_express.schema.yaml; sourceTree = "<group>"; };
+		0CD1522C1D2CF259003259B8 /* combo_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = combo_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CD1522D1D2CF259003259B8 /* default.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = default.yaml; sourceTree = "<group>"; };
+		0CD1522E1D2CF259003259B8 /* double_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = double_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CD1522F1D2CF259003259B8 /* double_pinyin_abc.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = double_pinyin_abc.schema.yaml; sourceTree = "<group>"; };
+		0CD152301D2CF259003259B8 /* double_pinyin_flypy.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = double_pinyin_flypy.schema.yaml; sourceTree = "<group>"; };
+		0CD152311D2CF25A003259B8 /* double_pinyin_mspy.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = double_pinyin_mspy.schema.yaml; sourceTree = "<group>"; };
+		0CD152321D2CF25A003259B8 /* double_pinyin_pyjj.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = double_pinyin_pyjj.schema.yaml; sourceTree = "<group>"; };
+		0CD152331D2CF25A003259B8 /* emoji.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emoji.dict.yaml; sourceTree = "<group>"; };
+		0CD152341D2CF25A003259B8 /* emoji.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emoji.schema.yaml; sourceTree = "<group>"; };
+		0CD152351D2CF25A003259B8 /* essay.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = essay.txt; sourceTree = "<group>"; };
+		0CD152361D2CF25A003259B8 /* installation.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = installation.yaml; sourceTree = "<group>"; };
+		0CD152371D2CF25A003259B8 /* ipa_xsampa.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ipa_xsampa.dict.yaml; sourceTree = "<group>"; };
+		0CD152381D2CF25A003259B8 /* ipa_xsampa.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ipa_xsampa.schema.yaml; sourceTree = "<group>"; };
+		0CD152391D2CF25A003259B8 /* jyutping.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jyutping.dict.yaml; sourceTree = "<group>"; };
+		0CD1523A1D2CF25A003259B8 /* jyutping.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jyutping.schema.yaml; sourceTree = "<group>"; };
+		0CD1523B1D2CF25A003259B8 /* luna_pinyin.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin.dict.yaml; sourceTree = "<group>"; };
+		0CD1523C1D2CF25A003259B8 /* luna_pinyin.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = luna_pinyin.prism.bin; sourceTree = "<group>"; };
+		0CD1523D1D2CF25A003259B8 /* luna_pinyin.reverse.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = luna_pinyin.reverse.bin; sourceTree = "<group>"; };
+		0CD1523E1D2CF25A003259B8 /* luna_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CD1523F1D2CF25A003259B8 /* luna_pinyin.table.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = luna_pinyin.table.bin; sourceTree = "<group>"; };
+		0CD152401D2CF25A003259B8 /* luna_pinyin_fluency.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = luna_pinyin_fluency.prism.bin; sourceTree = "<group>"; };
+		0CD152411D2CF25A003259B8 /* luna_pinyin_fluency.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_fluency.schema.yaml; sourceTree = "<group>"; };
+		0CD152421D2CF25A003259B8 /* luna_pinyin_simp.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = luna_pinyin_simp.prism.bin; sourceTree = "<group>"; };
+		0CD152431D2CF25A003259B8 /* luna_pinyin_simp.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_simp.schema.yaml; sourceTree = "<group>"; };
+		0CD152441D2CF25A003259B8 /* luna_pinyin_tw.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = luna_pinyin_tw.prism.bin; sourceTree = "<group>"; };
+		0CD152451D2CF25A003259B8 /* luna_pinyin_tw.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_tw.schema.yaml; sourceTree = "<group>"; };
+		0CD152471D2CF25A003259B8 /* HKVariants.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = HKVariants.ocd; sourceTree = "<group>"; };
+		0CD152481D2CF25A003259B8 /* s2t.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = s2t.json; sourceTree = "<group>"; };
+		0CD152491D2CF25A003259B8 /* STCharacters.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = STCharacters.ocd; sourceTree = "<group>"; };
+		0CD1524A1D2CF25A003259B8 /* STPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = STPhrases.ocd; sourceTree = "<group>"; };
+		0CD1524B1D2CF25A003259B8 /* t2hk.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t2hk.json; sourceTree = "<group>"; };
+		0CD1524C1D2CF25A003259B8 /* t2s.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t2s.json; sourceTree = "<group>"; };
+		0CD1524D1D2CF25A003259B8 /* t2tw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t2tw.json; sourceTree = "<group>"; };
+		0CD1524E1D2CF25A003259B8 /* TSCharacters.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = TSCharacters.ocd; sourceTree = "<group>"; };
+		0CD1524F1D2CF25A003259B8 /* TSPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = TSPhrases.ocd; sourceTree = "<group>"; };
+		0CD152501D2CF25A003259B8 /* TWVariants.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = TWVariants.ocd; sourceTree = "<group>"; };
+		0CD152511D2CF25A003259B8 /* pinyin_simp.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pinyin_simp.dict.yaml; sourceTree = "<group>"; };
+		0CD152521D2CF25A003259B8 /* pinyin_simp.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pinyin_simp.schema.yaml; sourceTree = "<group>"; };
+		0CD152531D2CF25A003259B8 /* quick5.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quick5.dict.yaml; sourceTree = "<group>"; };
+		0CD152541D2CF25A003259B8 /* quick5.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quick5.schema.yaml; sourceTree = "<group>"; };
+		0CD152551D2CF25A003259B8 /* sampheng.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sampheng.schema.yaml; sourceTree = "<group>"; };
+		0CD152561D2CF25A003259B8 /* soutzoe.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = soutzoe.dict.yaml; sourceTree = "<group>"; };
+		0CD152571D2CF25A003259B8 /* soutzoe.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = soutzoe.schema.yaml; sourceTree = "<group>"; };
+		0CD152581D2CF25A003259B8 /* squirrel.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = squirrel.yaml; sourceTree = "<group>"; };
+		0CD152591D2CF25A003259B8 /* stroke.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stroke.dict.yaml; sourceTree = "<group>"; };
+		0CD1525A1D2CF25A003259B8 /* stroke.prism.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = stroke.prism.bin; sourceTree = "<group>"; };
+		0CD1525B1D2CF25A003259B8 /* stroke.reverse.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = stroke.reverse.bin; sourceTree = "<group>"; };
+		0CD1525C1D2CF25A003259B8 /* stroke.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stroke.schema.yaml; sourceTree = "<group>"; };
+		0CD1525D1D2CF25A003259B8 /* stroke.table.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = stroke.table.bin; sourceTree = "<group>"; };
+		0CD1525E1D2CF25A003259B8 /* symbols.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = symbols.yaml; sourceTree = "<group>"; };
+		0CD1525F1D2CF25A003259B8 /* terra_pinyin.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terra_pinyin.dict.yaml; sourceTree = "<group>"; };
+		0CD152601D2CF25A003259B8 /* terra_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terra_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CD152611D2CF25A003259B8 /* wubi86.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wubi86.dict.yaml; sourceTree = "<group>"; };
+		0CD152621D2CF25A003259B8 /* wubi86.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wubi86.schema.yaml; sourceTree = "<group>"; };
+		0CD152631D2CF25A003259B8 /* wubi_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wubi_pinyin.schema.yaml; sourceTree = "<group>"; };
+		0CD152641D2CF25A003259B8 /* wugniu.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wugniu.schema.yaml; sourceTree = "<group>"; };
+		0CD152651D2CF25A003259B8 /* wugniu_lopha.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wugniu_lopha.dict.yaml; sourceTree = "<group>"; };
+		0CD152661D2CF25A003259B8 /* wugniu_lopha.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wugniu_lopha.schema.yaml; sourceTree = "<group>"; };
+		0CD152671D2CF25A003259B8 /* zyenpheng.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zyenpheng.dict.yaml; sourceTree = "<group>"; };
+		0CD152681D2CF25A003259B8 /* zyenpheng.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zyenpheng.schema.yaml; sourceTree = "<group>"; };
+		0CD152F81D2CF27D003259B8 /* ForwardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForwardingView.swift; sourceTree = "<group>"; };
+		0CD152F91D2CF27D003259B8 /* KeyboardInputTraits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInputTraits.swift; sourceTree = "<group>"; };
+		0CD152FA1D2CF27D003259B8 /* KeyboardLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayout.swift; sourceTree = "<group>"; };
+		0CD152FB1D2CF27D003259B8 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		0CD152FD1D2CF27D003259B8 /* CandidateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateModel.swift; sourceTree = "<group>"; };
+		0CD152FE1D2CF27D003259B8 /* Catboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catboard.swift; sourceTree = "<group>"; };
+		0CD152FF1D2CF27D003259B8 /* CatboardBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatboardBanner.swift; sourceTree = "<group>"; };
+		0CD153011D2CF27D003259B8 /* CandidateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateCell.swift; sourceTree = "<group>"; };
+		0CD153021D2CF27D003259B8 /* CandidatesBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatesBanner.swift; sourceTree = "<group>"; };
+		0CD153031D2CF27D003259B8 /* CandidateTableCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateTableCellTableViewCell.swift; sourceTree = "<group>"; };
+		0CD153041D2CF27D003259B8 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		0CD153051D2CF27D003259B8 /* MyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		0CD153071D2CF27D003259B8 /* arrow-down-black.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "arrow-down-black.pdf"; sourceTree = "<group>"; };
+		0CD153081D2CF27D003259B8 /* arrow-down-white.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "arrow-down-white.pdf"; sourceTree = "<group>"; };
+		0CD153091D2CF27D003259B8 /* arrow-up-black.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "arrow-up-black.pdf"; sourceTree = "<group>"; };
+		0CD1530A1D2CF27D003259B8 /* arrow-up-white.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "arrow-up-white.pdf"; sourceTree = "<group>"; };
+		0CD1530B1D2CF27D003259B8 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		0CD1530C1D2CF27D003259B8 /* TypingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypingLabel.swift; sourceTree = "<group>"; };
+		0CD1530E1D2CF27D003259B8 /* DefaultKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultKeyboard.swift; sourceTree = "<group>"; };
+		0CD1530F1D2CF27D003259B8 /* DirectionEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionEnum.swift; sourceTree = "<group>"; };
+		0CD153101D2CF27D003259B8 /* KeyboardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardModel.swift; sourceTree = "<group>"; };
+		0CD153121D2CF27D003259B8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		0CD153141D2CF27D003259B8 /* DefaultSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSettings.swift; sourceTree = "<group>"; };
+		0CD153151D2CF27D003259B8 /* DefaultSettings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultSettings.xib; sourceTree = "<group>"; };
+		0CD153161D2CF27D003259B8 /* ExtraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraView.swift; sourceTree = "<group>"; };
+		0CD153171D2CF27D003259B8 /* ImageKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageKey.swift; sourceTree = "<group>"; };
+		0CD153181D2CF27D003259B8 /* KeyboardConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardConnector.swift; sourceTree = "<group>"; };
+		0CD153191D2CF27D003259B8 /* KeyboardKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardKey.swift; sourceTree = "<group>"; };
+		0CD1531A1D2CF27D003259B8 /* KeyboardKeyBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardKeyBackground.swift; sourceTree = "<group>"; };
+		0CD1531B1D2CF27D003259B8 /* Shapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		0CD1533C1D2CF2BA003259B8 /* rime_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rime_api.h; sourceTree = "<group>"; };
+		0CD1533D1D2CF2BA003259B8 /* rime_levers_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rime_levers_api.h; sourceTree = "<group>"; };
+		0CD1533F1D2CF2BA003259B8 /* keysymdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keysymdef.h; sourceTree = "<group>"; };
+		0CD153401D2CF2BA003259B8 /* NSString+UTF8Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UTF8Utils.h"; sourceTree = "<group>"; };
+		0CD153411D2CF2BA003259B8 /* NSString+UTF8Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UTF8Utils.m"; sourceTree = "<group>"; };
+		0CD153421D2CF2BA003259B8 /* RimeTypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RimeTypeDef.h; sourceTree = "<group>"; };
+		0CD153431D2CF2BA003259B8 /* RimeTypeDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RimeTypeDef.m; sourceTree = "<group>"; };
+		0CD153441D2CF2BA003259B8 /* RimeWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RimeWrapper.h; sourceTree = "<group>"; };
+		0CD153451D2CF2BA003259B8 /* RimeWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RimeWrapper.m; sourceTree = "<group>"; };
+		0CD153531D2CF3CF003259B8 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		0CD153541D2CF448003259B8 /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libleveldb.a; sourceTree = "<group>"; };
+		0CD153551D2CF448003259B8 /* libmemenv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmemenv.a; sourceTree = "<group>"; };
+		0CD1535E1D2CFB16003259B8 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
+		0CFD55071D729ADC00646CA9 /* SelectInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectInputViewController.h; sourceTree = "<group>"; };
+		0CFD55081D729ADC00646CA9 /* SelectInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectInputViewController.m; sourceTree = "<group>"; };
+		0CFD55091D729ADC00646CA9 /* SelectInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectInputViewController.xib; sourceTree = "<group>"; };
+		0CFD550E1D729D3900646CA9 /* Rime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Rime.entitlements; sourceTree = "<group>"; };
+		0CFD550F1D729D4400646CA9 /* swiftKeyBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = swiftKeyBoard.entitlements; sourceTree = "<group>"; };
+		0CFD55131D729D7D00646CA9 /* NSString+Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Path.h"; path = "../../../../Github/iRime/iRime/NSString+Path.h"; sourceTree = "<group>"; };
+		0CFD55141D729D7D00646CA9 /* NSString+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Path.m"; path = "../../../../Github/iRime/iRime/NSString+Path.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C93D6D81CFF171E00DDFCD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD1535F1D2CFB16003259B8 /* SnapKit.framework in Frameworks */,
+				0CD153561D2CF448003259B8 /* libleveldb.a in Frameworks */,
+				0C92657C1DC255FF00D0297C /* boost.framework in Frameworks */,
+				0CD1534F1D2CF2EA003259B8 /* libc++.tbd in Frameworks */,
+				0CD153491D2CF2CD003259B8 /* liblibmarisa-trie.a in Frameworks */,
+				0CD1534A1D2CF2CD003259B8 /* liblibopencc.a in Frameworks */,
+				0CD153571D2CF448003259B8 /* libmemenv.a in Frameworks */,
+				0CD1534B1D2CF2CD003259B8 /* liblibrime.a in Frameworks */,
+				0CD1534C1D2CF2CD003259B8 /* liblibyaml.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAD247B1D608484007EE8C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAD24BB1D6085C9007EE8C0 /* libleveldb.a in Frameworks */,
+				0CAD24BC1D6085C9007EE8C0 /* libmemenv.a in Frameworks */,
+				0CAD24B71D6084A2007EE8C0 /* libc++.tbd in Frameworks */,
+				0CAD24B11D608496007EE8C0 /* liblibmarisa-trie.a in Frameworks */,
+				0CAD24B21D608496007EE8C0 /* liblibopencc.a in Frameworks */,
+				0CAD24B31D608496007EE8C0 /* liblibrime.a in Frameworks */,
+				0CAD24B41D608496007EE8C0 /* liblibyaml.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAD24931D608485007EE8C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAD249E1D608486007EE8C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC5D2261CFC7F99001A48D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC5D2651CFC7FEB001A48D6 /* liblibmarisa-trie.a in Frameworks */,
+				0CC5D2661CFC7FEB001A48D6 /* liblibopencc.a in Frameworks */,
+				0CC5D2671CFC7FEB001A48D6 /* liblibrime.a in Frameworks */,
+				0C2C2B6E1CFD857D0027259E /* boost.framework in Frameworks */,
+				0CAD832C1D115E0600DA88DB /* libleveldb.a in Frameworks */,
+				0CAD832D1D115E0600DA88DB /* libmemenv.a in Frameworks */,
+				0CC5D2681CFC7FEB001A48D6 /* liblibyaml.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC5D23F1CFC7F99001A48D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC5D24A1CFC7F99001A48D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C2C2B0A1CFD6CFD0027259E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0CAD832A1D115E0500DA88DB /* libleveldb.a */,
+				0CAD832B1D115E0600DA88DB /* libmemenv.a */,
+				0C2C2B6D1CFD857D0027259E /* boost.framework */,
+				0C2C2B081CFD6C770027259E /* libc++.tbd */,
+				0CC5D2601CFC7FEB001A48D6 /* liblibmarisa-trie.a */,
+				0CC5D2611CFC7FEB001A48D6 /* liblibopencc.a */,
+				0CC5D2621CFC7FEB001A48D6 /* liblibrime.a */,
+				0CC5D2631CFC7FEB001A48D6 /* liblibyaml.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		0C93D6DC1CFF171E00DDFCD0 /* swiftKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				0CFD550F1D729D4400646CA9 /* swiftKeyBoard.entitlements */,
+				0CD1535E1D2CFB16003259B8 /* SnapKit.framework */,
+				0CD1533A1D2CF2BA003259B8 /* RimeWrapeper */,
+				0CD152F61D2CF27D003259B8 /* tasty-imitation-keyboard */,
+				0CD151D41D2CF259003259B8 /* Rime */,
+				0CD1520B1D2CF259003259B8 /* RimeResource */,
+				0CD152231D2CF259003259B8 /* SharedSupport */,
+				0C93D6DF1CFF171F00DDFCD0 /* Info.plist */,
+			);
+			path = swiftKeyBoard;
+			sourceTree = "<group>";
+		};
+		0CAD247F1D608485007EE8C0 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				0CAD24831D608485007EE8C0 /* AppDelegate.h */,
+				0CAD24841D608485007EE8C0 /* AppDelegate.m */,
+				0CAD24861D608485007EE8C0 /* ViewController.h */,
+				0CAD24871D608485007EE8C0 /* ViewController.m */,
+				0CAD24891D608485007EE8C0 /* Main.storyboard */,
+				0CAD248C1D608485007EE8C0 /* Assets.xcassets */,
+				0CAD248E1D608485007EE8C0 /* LaunchScreen.storyboard */,
+				0CAD24911D608485007EE8C0 /* Info.plist */,
+				0CAD24801D608485007EE8C0 /* Supporting Files */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		0CAD24801D608485007EE8C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CAD24811D608485007EE8C0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0CAD24991D608485007EE8C0 /* TestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CAD249A1D608486007EE8C0 /* TestAppTests.m */,
+				0CAD249C1D608486007EE8C0 /* Info.plist */,
+			);
+			path = TestAppTests;
+			sourceTree = "<group>";
+		};
+		0CAD24A41D608486007EE8C0 /* TestAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0CAD24A51D608486007EE8C0 /* TestAppUITests.m */,
+				0CAD24A71D608486007EE8C0 /* Info.plist */,
+			);
+			path = TestAppUITests;
+			sourceTree = "<group>";
+		};
+		0CAD82AF1D115C3300DA88DB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0CAD82B01D115C3300DA88DB /* opencc */,
+				0CAD82B41D115C3300DA88DB /* Presets */,
+				0CAD82E91D115C3300DA88DB /* XIME_Icon.tiff */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0CAD82B01D115C3300DA88DB /* opencc */ = {
+			isa = PBXGroup;
+			children = (
+				0CAD82B11D115C3300DA88DB /* t2s.json */,
+				0CAD82B21D115C3300DA88DB /* TSCharacters.ocd */,
+				0CAD82B31D115C3300DA88DB /* TSPhrases.ocd */,
+			);
+			path = opencc;
+			sourceTree = "<group>";
+		};
+		0CAD82B41D115C3300DA88DB /* Presets */ = {
+			isa = PBXGroup;
+			children = (
+				0CAD82B51D115C3300DA88DB /* default.yaml */,
+				0CAD82B61D115C3300DA88DB /* essay.txt */,
+				0CAD82B71D115C3300DA88DB /* extra */,
+				0CAD82BE1D115C3300DA88DB /* preset */,
+				0CAD82CD1D115C3300DA88DB /* supplement */,
+				0CAD82E81D115C3300DA88DB /* symbols.yaml */,
+			);
+			path = Presets;
+			sourceTree = "<group>";
+		};
+		0CAD82B71D115C3300DA88DB /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				0CAD82B81D115C3300DA88DB /* array30.dict.yaml */,
+				0CAD82B91D115C3300DA88DB /* array30.schema.yaml */,
+				0CAD82BA1D115C3300DA88DB /* scj6.dict.yaml */,
+				0CAD82BB1D115C3300DA88DB /* scj6.schema.yaml */,
+				0CAD82BC1D115C3300DA88DB /* stenotype.schema.yaml */,
+				0CAD82BD1D115C3300DA88DB /* wubi_trad.schema.yaml */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		0CAD82BE1D115C3300DA88DB /* preset */ = {
+			isa = PBXGroup;
+			children = (
+				0CAD82BF1D115C3300DA88DB /* bopomofo.schema.yaml */,
+				0CAD82C01D115C3300DA88DB /* bopomofo_tw.schema.yaml */,
+				0CAD82C11D115C3300DA88DB /* cangjie5.dict.yaml */,
+				0CAD82C21D115C3300DA88DB /* cangjie5.schema.yaml */,
+				0CAD82C31D115C3300DA88DB /* cangjie5_express.schema.yaml */,
+				0CAD82C41D115C3300DA88DB /* luna_pinyin.dict.yaml */,
+				0CAD82C51D115C3300DA88DB /* luna_pinyin.schema.yaml */,
+				0CAD82C61D115C3300DA88DB /* luna_pinyin_fluency.schema.yaml */,
+				0CAD82C71D115C3300DA88DB /* luna_pinyin_simp.schema.yaml */,
+				0CAD82C81D115C3300DA88DB /* luna_pinyin_tw.schema.yaml */,
+				0CAD82C91D115C3300DA88DB /* stroke.dict.yaml */,
+				0CAD82CA1D115C3300DA88DB /* stroke.schema.yaml */,
+				0CAD82CB1D115C3300DA88DB /* terra_pinyin.dict.yaml */,
+				0CAD82CC1D115C3300DA88DB /* terra_pinyin.schema.yaml */,
+			);
+			path = preset;
+			sourceTree = "<group>";
+		};
+		0CAD82CD1D115C3300DA88DB /* supplement */ = {
+			isa = PBXGroup;
+			children = (
+				0CAD82CE1D115C3300DA88DB /* combo_pinyin.schema.yaml */,
+				0CAD82CF1D115C3300DA88DB /* double_pinyin.schema.yaml */,
+				0CAD82D01D115C3300DA88DB /* double_pinyin_abc.schema.yaml */,
+				0CAD82D11D115C3300DA88DB /* double_pinyin_flypy.schema.yaml */,
+				0CAD82D21D115C3300DA88DB /* double_pinyin_mspy.schema.yaml */,
+				0CAD82D31D115C3300DA88DB /* emoji.dict.yaml */,
+				0CAD82D41D115C3300DA88DB /* emoji.schema.yaml */,
+				0CAD82D51D115C3300DA88DB /* ipa_xsampa.dict.yaml */,
+				0CAD82D61D115C3300DA88DB /* ipa_xsampa.schema.yaml */,
+				0CAD82D71D115C3300DA88DB /* jyutping.dict.yaml */,
+				0CAD82D81D115C3300DA88DB /* jyutping.schema.yaml */,
+				0CAD82D91D115C3300DA88DB /* pinyin_simp.dict.yaml */,
+				0CAD82DA1D115C3300DA88DB /* pinyin_simp.schema.yaml */,
+				0CAD82DB1D115C3300DA88DB /* quick5.dict.yaml */,
+				0CAD82DC1D115C3300DA88DB /* quick5.schema.yaml */,
+				0CAD82DD1D115C3300DA88DB /* sampheng.schema.yaml */,
+				0CAD82DE1D115C3300DA88DB /* soutzoe.dict.yaml */,
+				0CAD82DF1D115C3300DA88DB /* soutzoe.schema.yaml */,
+				0CAD82E01D115C3300DA88DB /* wubi86.dict.yaml */,
+				0CAD82E11D115C3300DA88DB /* wubi86.schema.yaml */,
+				0CAD82E21D115C3300DA88DB /* wubi_pinyin.schema.yaml */,
+				0CAD82E31D115C3300DA88DB /* wugniu.schema.yaml */,
+				0CAD82E41D115C3300DA88DB /* wugniu_lopha.dict.yaml */,
+				0CAD82E51D115C3300DA88DB /* wugniu_lopha.schema.yaml */,
+				0CAD82E61D115C3300DA88DB /* zyenpheng.dict.yaml */,
+				0CAD82E71D115C3300DA88DB /* zyenpheng.schema.yaml */,
+			);
+			path = supplement;
+			sourceTree = "<group>";
+		};
+		0CB0ED941CFF0D2400F2ACD9 /* RimeKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0CB0ED951CFF0D2400F2ACD9 /* RimeKeyboardViewController.h */,
+				0CB0ED961CFF0D2400F2ACD9 /* RimeKeyboardViewController.m */,
+				0CB0ED981CFF0D2400F2ACD9 /* Info.plist */,
+			);
+			path = RimeKeyboard;
+			sourceTree = "<group>";
+		};
+		0CC5D2201CFC7F99001A48D6 = {
+			isa = PBXGroup;
+			children = (
+				0CD153541D2CF448003259B8 /* libleveldb.a */,
+				0CD153551D2CF448003259B8 /* libmemenv.a */,
+				0CD153531D2CF3CF003259B8 /* Header.h */,
+				0CAD83A41D115F0400DA88DB /* XIME */,
+				0CAD82AF1D115C3300DA88DB /* Resource */,
+				0C2C2B0A1CFD6CFD0027259E /* lib */,
+				0CC5D22B1CFC7F99001A48D6 /* Rime */,
+				0CC5D2451CFC7F99001A48D6 /* RimeTests */,
+				0CC5D2501CFC7F99001A48D6 /* RimeUITests */,
+				0CB0ED941CFF0D2400F2ACD9 /* RimeKeyboard */,
+				0C93D6DC1CFF171E00DDFCD0 /* swiftKeyBoard */,
+				0CAD247F1D608485007EE8C0 /* TestApp */,
+				0CAD24991D608485007EE8C0 /* TestAppTests */,
+				0CAD24A41D608486007EE8C0 /* TestAppUITests */,
+				0CC5D22A1CFC7F99001A48D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CC5D22A1CFC7F99001A48D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CC5D2291CFC7F99001A48D6 /* Rime.app */,
+				0CC5D2421CFC7F99001A48D6 /* RimeTests.xctest */,
+				0CC5D24D1CFC7F99001A48D6 /* RimeUITests.xctest */,
+				0C93D6DB1CFF171E00DDFCD0 /* swiftKeyBoard.appex */,
+				0CAD247E1D608484007EE8C0 /* TestApp.app */,
+				0CAD24961D608485007EE8C0 /* TestAppTests.xctest */,
+				0CAD24A11D608486007EE8C0 /* TestAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CC5D22B1CFC7F99001A48D6 /* Rime */ = {
+			isa = PBXGroup;
+			children = (
+				0CFD55101D729D7D00646CA9 /* FileManger */,
+				0CFD55131D729D7D00646CA9 /* NSString+Path.h */,
+				0CFD55141D729D7D00646CA9 /* NSString+Path.m */,
+				0CFD550E1D729D3900646CA9 /* Rime.entitlements */,
+				0CFD55071D729ADC00646CA9 /* SelectInputViewController.h */,
+				0CFD55081D729ADC00646CA9 /* SelectInputViewController.m */,
+				0CFD55091D729ADC00646CA9 /* SelectInputViewController.xib */,
+				0CAD24771D608307007EE8C0 /* Main.storyboard */,
+				0CC5D22F1CFC7F99001A48D6 /* AppDelegate.h */,
+				0CC5D2301CFC7F99001A48D6 /* AppDelegate.m */,
+				0CC5D2321CFC7F99001A48D6 /* ViewController.h */,
+				0CC5D2331CFC7F99001A48D6 /* ViewController.m */,
+				0CC5D2381CFC7F99001A48D6 /* Assets.xcassets */,
+				0CC5D23A1CFC7F99001A48D6 /* LaunchScreen.storyboard */,
+				0CC5D23D1CFC7F99001A48D6 /* Info.plist */,
+				0CC5D22C1CFC7F99001A48D6 /* Supporting Files */,
+			);
+			path = Rime;
+			sourceTree = "<group>";
+		};
+		0CC5D22C1CFC7F99001A48D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CC5D22D1CFC7F99001A48D6 /* main.mm */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0CC5D2451CFC7F99001A48D6 /* RimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CC5D2461CFC7F99001A48D6 /* RimeTests.m */,
+				0CC5D2481CFC7F99001A48D6 /* Info.plist */,
+			);
+			path = RimeTests;
+			sourceTree = "<group>";
+		};
+		0CC5D2501CFC7F99001A48D6 /* RimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0CC5D2511CFC7F99001A48D6 /* RimeUITests.m */,
+				0CC5D2531CFC7F99001A48D6 /* Info.plist */,
+			);
+			path = RimeUITests;
+			sourceTree = "<group>";
+		};
+		0CD151D41D2CF259003259B8 /* Rime */ = {
+			isa = PBXGroup;
+			children = (
+				0CD151D51D2CF259003259B8 /* cangjie5.schema.yaml */,
+				0CD151D61D2CF259003259B8 /* default.custom.yaml */,
+				0CD151D71D2CF259003259B8 /* default.yaml */,
+				0CD151D81D2CF259003259B8 /* installation.yaml */,
+				0CD151D91D2CF259003259B8 /* luna_pinyin.schema.yaml */,
+				0CD151DA1D2CF259003259B8 /* luna_pinyin.userdb */,
+				0CD151E31D2CF259003259B8 /* luna_pinyin_fluency.schema.yaml */,
+				0CD151E41D2CF259003259B8 /* luna_pinyin_simp.schema.yaml */,
+				0CD151E51D2CF259003259B8 /* luna_pinyin_tw.schema.yaml */,
+				0CD151E61D2CF259003259B8 /* pinyin_simp.prism.bin */,
+				0CD151E71D2CF259003259B8 /* pinyin_simp.reverse.bin */,
+				0CD151E81D2CF259003259B8 /* pinyin_simp.schema.yaml */,
+				0CD151E91D2CF259003259B8 /* pinyin_simp.table.bin */,
+				0CD151EA1D2CF259003259B8 /* squirrel.custom.yaml */,
+				0CD151EB1D2CF259003259B8 /* squirrel.yaml */,
+				0CD151EC1D2CF259003259B8 /* stroke.schema.yaml */,
+				0CD151ED1D2CF259003259B8 /* symbols.yaml */,
+				0CD151EE1D2CF259003259B8 /* sync */,
+				0CD151FE1D2CF259003259B8 /* wubi86.reverse.bin */,
+				0CD151FF1D2CF259003259B8 /* wubi86.table.bin */,
+				0CD152001D2CF259003259B8 /* wubi86.userdb */,
+				0CD152091D2CF259003259B8 /* wubi_pinyin.prism.bin */,
+				0CD1520A1D2CF259003259B8 /* wubi_pinyin.schema.yaml */,
+			);
+			path = Rime;
+			sourceTree = "<group>";
+		};
+		0CD151DA1D2CF259003259B8 /* luna_pinyin.userdb */ = {
+			isa = PBXGroup;
+			children = (
+				0CD151DB1D2CF259003259B8 /* 000005.ldb */,
+				0CD151DC1D2CF259003259B8 /* 000010.ldb */,
+				0CD151DD1D2CF259003259B8 /* 000011.log */,
+				0CD151DE1D2CF259003259B8 /* CURRENT */,
+				0CD151DF1D2CF259003259B8 /* LOCK */,
+				0CD151E01D2CF259003259B8 /* LOG */,
+				0CD151E11D2CF259003259B8 /* LOG.old */,
+				0CD151E21D2CF259003259B8 /* MANIFEST-000009 */,
+			);
+			path = luna_pinyin.userdb;
+			sourceTree = "<group>";
+		};
+		0CD151EE1D2CF259003259B8 /* sync */ = {
+			isa = PBXGroup;
+			children = (
+				0CD151EF1D2CF259003259B8 /* f33d5051-ab02-4624-9fc8-d873fe1833c6 */,
+			);
+			path = sync;
+			sourceTree = "<group>";
+		};
+		0CD151EF1D2CF259003259B8 /* f33d5051-ab02-4624-9fc8-d873fe1833c6 */ = {
+			isa = PBXGroup;
+			children = (
+				0CD151F01D2CF259003259B8 /* cangjie5.schema.yaml */,
+				0CD151F11D2CF259003259B8 /* default.custom.yaml */,
+				0CD151F21D2CF259003259B8 /* installation.yaml */,
+				0CD151F31D2CF259003259B8 /* luna_pinyin.schema.yaml */,
+				0CD151F41D2CF259003259B8 /* luna_pinyin.userdb.txt */,
+				0CD151F51D2CF259003259B8 /* luna_pinyin_fluency.schema.yaml */,
+				0CD151F61D2CF259003259B8 /* luna_pinyin_simp.schema.yaml */,
+				0CD151F71D2CF259003259B8 /* luna_pinyin_tw.schema.yaml */,
+				0CD151F81D2CF259003259B8 /* pinyin_simp.schema.yaml */,
+				0CD151F91D2CF259003259B8 /* squirrel.custom.yaml */,
+				0CD151FA1D2CF259003259B8 /* stroke.schema.yaml */,
+				0CD151FB1D2CF259003259B8 /* symbols.yaml */,
+				0CD151FC1D2CF259003259B8 /* wubi86.userdb.txt */,
+				0CD151FD1D2CF259003259B8 /* wubi_pinyin.schema.yaml */,
+			);
+			path = "f33d5051-ab02-4624-9fc8-d873fe1833c6";
+			sourceTree = "<group>";
+		};
+		0CD152001D2CF259003259B8 /* wubi86.userdb */ = {
+			isa = PBXGroup;
+			children = (
+				0CD152011D2CF259003259B8 /* 000059.ldb */,
+				0CD152021D2CF259003259B8 /* 000061.ldb */,
+				0CD152031D2CF259003259B8 /* 000066.log */,
+				0CD152041D2CF259003259B8 /* CURRENT */,
+				0CD152051D2CF259003259B8 /* LOCK */,
+				0CD152061D2CF259003259B8 /* LOG */,
+				0CD152071D2CF259003259B8 /* LOG.old */,
+				0CD152081D2CF259003259B8 /* MANIFEST-000065 */,
+			);
+			path = wubi86.userdb;
+			sourceTree = "<group>";
+		};
+		0CD1520B1D2CF259003259B8 /* RimeResource */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1520C1D2CF259003259B8 /* cangjie5.prism.bin */,
+				0CD1520D1D2CF259003259B8 /* cangjie5.reverse.bin */,
+				0CD1520E1D2CF259003259B8 /* cangjie5.schema.yaml */,
+				0CD1520F1D2CF259003259B8 /* cangjie5.table.bin */,
+				0CD152101D2CF259003259B8 /* default.yaml */,
+				0CD152111D2CF259003259B8 /* installation.yaml */,
+				0CD152121D2CF259003259B8 /* luna_pinyin.prism.bin */,
+				0CD152131D2CF259003259B8 /* luna_pinyin.reverse.bin */,
+				0CD152141D2CF259003259B8 /* luna_pinyin.schema.yaml */,
+				0CD152151D2CF259003259B8 /* luna_pinyin.table.bin */,
+				0CD152161D2CF259003259B8 /* luna_pinyin.userdb.kct */,
+				0CD152171D2CF259003259B8 /* luna_pinyin.userdb.kct.wal */,
+				0CD152181D2CF259003259B8 /* luna_pinyin_fluency.prism.bin */,
+				0CD152191D2CF259003259B8 /* luna_pinyin_fluency.schema.yaml */,
+				0CD1521A1D2CF259003259B8 /* luna_pinyin_simp.prism.bin */,
+				0CD1521B1D2CF259003259B8 /* luna_pinyin_simp.schema.yaml */,
+				0CD1521C1D2CF259003259B8 /* luna_pinyin_tw.prism.bin */,
+				0CD1521D1D2CF259003259B8 /* luna_pinyin_tw.schema.yaml */,
+				0CD1521E1D2CF259003259B8 /* stroke.prism.bin */,
+				0CD1521F1D2CF259003259B8 /* stroke.reverse.bin */,
+				0CD152201D2CF259003259B8 /* stroke.schema.yaml */,
+				0CD152211D2CF259003259B8 /* stroke.table.bin */,
+				0CD152221D2CF259003259B8 /* symbols.yaml */,
+			);
+			path = RimeResource;
+			sourceTree = "<group>";
+		};
+		0CD152231D2CF259003259B8 /* SharedSupport */ = {
+			isa = PBXGroup;
+			children = (
+				0CD152241D2CF259003259B8 /* bopomofo.schema.yaml */,
+				0CD152251D2CF259003259B8 /* bopomofo_tw.schema.yaml */,
+				0CD152261D2CF259003259B8 /* cangjie5.dict.yaml */,
+				0CD152271D2CF259003259B8 /* cangjie5.prism.bin */,
+				0CD152281D2CF259003259B8 /* cangjie5.reverse.bin */,
+				0CD152291D2CF259003259B8 /* cangjie5.schema.yaml */,
+				0CD1522A1D2CF259003259B8 /* cangjie5.table.bin */,
+				0CD1522B1D2CF259003259B8 /* cangjie5_express.schema.yaml */,
+				0CD1522C1D2CF259003259B8 /* combo_pinyin.schema.yaml */,
+				0CD1522D1D2CF259003259B8 /* default.yaml */,
+				0CD1522E1D2CF259003259B8 /* double_pinyin.schema.yaml */,
+				0CD1522F1D2CF259003259B8 /* double_pinyin_abc.schema.yaml */,
+				0CD152301D2CF259003259B8 /* double_pinyin_flypy.schema.yaml */,
+				0CD152311D2CF25A003259B8 /* double_pinyin_mspy.schema.yaml */,
+				0CD152321D2CF25A003259B8 /* double_pinyin_pyjj.schema.yaml */,
+				0CD152331D2CF25A003259B8 /* emoji.dict.yaml */,
+				0CD152341D2CF25A003259B8 /* emoji.schema.yaml */,
+				0CD152351D2CF25A003259B8 /* essay.txt */,
+				0CD152361D2CF25A003259B8 /* installation.yaml */,
+				0CD152371D2CF25A003259B8 /* ipa_xsampa.dict.yaml */,
+				0CD152381D2CF25A003259B8 /* ipa_xsampa.schema.yaml */,
+				0CD152391D2CF25A003259B8 /* jyutping.dict.yaml */,
+				0CD1523A1D2CF25A003259B8 /* jyutping.schema.yaml */,
+				0CD1523B1D2CF25A003259B8 /* luna_pinyin.dict.yaml */,
+				0CD1523C1D2CF25A003259B8 /* luna_pinyin.prism.bin */,
+				0CD1523D1D2CF25A003259B8 /* luna_pinyin.reverse.bin */,
+				0CD1523E1D2CF25A003259B8 /* luna_pinyin.schema.yaml */,
+				0CD1523F1D2CF25A003259B8 /* luna_pinyin.table.bin */,
+				0CD152401D2CF25A003259B8 /* luna_pinyin_fluency.prism.bin */,
+				0CD152411D2CF25A003259B8 /* luna_pinyin_fluency.schema.yaml */,
+				0CD152421D2CF25A003259B8 /* luna_pinyin_simp.prism.bin */,
+				0CD152431D2CF25A003259B8 /* luna_pinyin_simp.schema.yaml */,
+				0CD152441D2CF25A003259B8 /* luna_pinyin_tw.prism.bin */,
+				0CD152451D2CF25A003259B8 /* luna_pinyin_tw.schema.yaml */,
+				0CD152461D2CF25A003259B8 /* opencc */,
+				0CD152511D2CF25A003259B8 /* pinyin_simp.dict.yaml */,
+				0CD152521D2CF25A003259B8 /* pinyin_simp.schema.yaml */,
+				0CD152531D2CF25A003259B8 /* quick5.dict.yaml */,
+				0CD152541D2CF25A003259B8 /* quick5.schema.yaml */,
+				0CD152551D2CF25A003259B8 /* sampheng.schema.yaml */,
+				0CD152561D2CF25A003259B8 /* soutzoe.dict.yaml */,
+				0CD152571D2CF25A003259B8 /* soutzoe.schema.yaml */,
+				0CD152581D2CF25A003259B8 /* squirrel.yaml */,
+				0CD152591D2CF25A003259B8 /* stroke.dict.yaml */,
+				0CD1525A1D2CF25A003259B8 /* stroke.prism.bin */,
+				0CD1525B1D2CF25A003259B8 /* stroke.reverse.bin */,
+				0CD1525C1D2CF25A003259B8 /* stroke.schema.yaml */,
+				0CD1525D1D2CF25A003259B8 /* stroke.table.bin */,
+				0CD1525E1D2CF25A003259B8 /* symbols.yaml */,
+				0CD1525F1D2CF25A003259B8 /* terra_pinyin.dict.yaml */,
+				0CD152601D2CF25A003259B8 /* terra_pinyin.schema.yaml */,
+				0CD152611D2CF25A003259B8 /* wubi86.dict.yaml */,
+				0CD152621D2CF25A003259B8 /* wubi86.schema.yaml */,
+				0CD152631D2CF25A003259B8 /* wubi_pinyin.schema.yaml */,
+				0CD152641D2CF25A003259B8 /* wugniu.schema.yaml */,
+				0CD152651D2CF25A003259B8 /* wugniu_lopha.dict.yaml */,
+				0CD152661D2CF25A003259B8 /* wugniu_lopha.schema.yaml */,
+				0CD152671D2CF25A003259B8 /* zyenpheng.dict.yaml */,
+				0CD152681D2CF25A003259B8 /* zyenpheng.schema.yaml */,
+			);
+			path = SharedSupport;
+			sourceTree = "<group>";
+		};
+		0CD152461D2CF25A003259B8 /* opencc */ = {
+			isa = PBXGroup;
+			children = (
+				0CD152471D2CF25A003259B8 /* HKVariants.ocd */,
+				0CD152481D2CF25A003259B8 /* s2t.json */,
+				0CD152491D2CF25A003259B8 /* STCharacters.ocd */,
+				0CD1524A1D2CF25A003259B8 /* STPhrases.ocd */,
+				0CD1524B1D2CF25A003259B8 /* t2hk.json */,
+				0CD1524C1D2CF25A003259B8 /* t2s.json */,
+				0CD1524D1D2CF25A003259B8 /* t2tw.json */,
+				0CD1524E1D2CF25A003259B8 /* TSCharacters.ocd */,
+				0CD1524F1D2CF25A003259B8 /* TSPhrases.ocd */,
+				0CD152501D2CF25A003259B8 /* TWVariants.ocd */,
+			);
+			path = opencc;
+			sourceTree = "<group>";
+		};
+		0CD152F61D2CF27D003259B8 /* tasty-imitation-keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0CD152F71D2CF27D003259B8 /* Controller */,
+				0CD152FC1D2CF27D003259B8 /* Demo */,
+				0CD1530D1D2CF27D003259B8 /* Model */,
+				0CD153111D2CF27D003259B8 /* Utility */,
+				0CD153131D2CF27D003259B8 /* Views */,
+			);
+			path = "tasty-imitation-keyboard";
+			sourceTree = "<group>";
+		};
+		0CD152F71D2CF27D003259B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CD152F81D2CF27D003259B8 /* ForwardingView.swift */,
+				0CD152F91D2CF27D003259B8 /* KeyboardInputTraits.swift */,
+				0CD152FA1D2CF27D003259B8 /* KeyboardLayout.swift */,
+				0CD152FB1D2CF27D003259B8 /* KeyboardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0CD152FC1D2CF27D003259B8 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				0CD152FD1D2CF27D003259B8 /* CandidateModel.swift */,
+				0CD152FE1D2CF27D003259B8 /* Catboard.swift */,
+				0CD152FF1D2CF27D003259B8 /* CatboardBanner.swift */,
+				0CD153001D2CF27D003259B8 /* spi */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		0CD153001D2CF27D003259B8 /* spi */ = {
+			isa = PBXGroup;
+			children = (
+				0CD153011D2CF27D003259B8 /* CandidateCell.swift */,
+				0CD153021D2CF27D003259B8 /* CandidatesBanner.swift */,
+				0CD153031D2CF27D003259B8 /* CandidateTableCellTableViewCell.swift */,
+				0CD153041D2CF27D003259B8 /* Logger.swift */,
+				0CD153051D2CF27D003259B8 /* MyCollectionViewFlowLayout.swift */,
+				0CD153061D2CF27D003259B8 /* res */,
+				0CD1530B1D2CF27D003259B8 /* StringExtension.swift */,
+				0CD1530C1D2CF27D003259B8 /* TypingLabel.swift */,
+			);
+			path = spi;
+			sourceTree = "<group>";
+		};
+		0CD153061D2CF27D003259B8 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				0CD153071D2CF27D003259B8 /* arrow-down-black.pdf */,
+				0CD153081D2CF27D003259B8 /* arrow-down-white.pdf */,
+				0CD153091D2CF27D003259B8 /* arrow-up-black.pdf */,
+				0CD1530A1D2CF27D003259B8 /* arrow-up-white.pdf */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		0CD1530D1D2CF27D003259B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1530E1D2CF27D003259B8 /* DefaultKeyboard.swift */,
+				0CD1530F1D2CF27D003259B8 /* DirectionEnum.swift */,
+				0CD153101D2CF27D003259B8 /* KeyboardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0CD153111D2CF27D003259B8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0CD153121D2CF27D003259B8 /* Utilities.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0CD153131D2CF27D003259B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CD153141D2CF27D003259B8 /* DefaultSettings.swift */,
+				0CD153151D2CF27D003259B8 /* DefaultSettings.xib */,
+				0CD153161D2CF27D003259B8 /* ExtraView.swift */,
+				0CD153171D2CF27D003259B8 /* ImageKey.swift */,
+				0CD153181D2CF27D003259B8 /* KeyboardConnector.swift */,
+				0CD153191D2CF27D003259B8 /* KeyboardKey.swift */,
+				0CD1531A1D2CF27D003259B8 /* KeyboardKeyBackground.swift */,
+				0CD1531B1D2CF27D003259B8 /* Shapes.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0CD1533A1D2CF2BA003259B8 /* RimeWrapeper */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1533B1D2CF2BA003259B8 /* include */,
+				0CD1533E1D2CF2BA003259B8 /* Source */,
+			);
+			path = RimeWrapeper;
+			sourceTree = "<group>";
+		};
+		0CD1533B1D2CF2BA003259B8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1533C1D2CF2BA003259B8 /* rime_api.h */,
+				0CD1533D1D2CF2BA003259B8 /* rime_levers_api.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0CD1533E1D2CF2BA003259B8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1533F1D2CF2BA003259B8 /* keysymdef.h */,
+				0CD153401D2CF2BA003259B8 /* NSString+UTF8Utils.h */,
+				0CD153411D2CF2BA003259B8 /* NSString+UTF8Utils.m */,
+				0CD153421D2CF2BA003259B8 /* RimeTypeDef.h */,
+				0CD153431D2CF2BA003259B8 /* RimeTypeDef.m */,
+				0CD153441D2CF2BA003259B8 /* RimeWrapper.h */,
+				0CD153451D2CF2BA003259B8 /* RimeWrapper.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0CFD55101D729D7D00646CA9 /* FileManger */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FileManger;
+			path = ../../../../Github/iRime/iRime/FileManger;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C93D6DA1CFF171E00DDFCD0 /* swiftKeyBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C93D6E31CFF171F00DDFCD0 /* Build configuration list for PBXNativeTarget "swiftKeyBoard" */;
+			buildPhases = (
+				0C93D6D71CFF171E00DDFCD0 /* Sources */,
+				0C93D6D81CFF171E00DDFCD0 /* Frameworks */,
+				0C93D6D91CFF171E00DDFCD0 /* Resources */,
+				0CD1535D1D2CFAB6003259B8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swiftKeyBoard;
+			productName = swiftKeyBoard;
+			productReference = 0C93D6DB1CFF171E00DDFCD0 /* swiftKeyBoard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0CAD247D1D608484007EE8C0 /* TestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CAD24A81D608486007EE8C0 /* Build configuration list for PBXNativeTarget "TestApp" */;
+			buildPhases = (
+				0CAD247A1D608484007EE8C0 /* Sources */,
+				0CAD247B1D608484007EE8C0 /* Frameworks */,
+				0CAD247C1D608484007EE8C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestApp;
+			productName = TestApp;
+			productReference = 0CAD247E1D608484007EE8C0 /* TestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CAD24951D608485007EE8C0 /* TestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CAD24AB1D608486007EE8C0 /* Build configuration list for PBXNativeTarget "TestAppTests" */;
+			buildPhases = (
+				0CAD24921D608485007EE8C0 /* Sources */,
+				0CAD24931D608485007EE8C0 /* Frameworks */,
+				0CAD24941D608485007EE8C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CAD24981D608485007EE8C0 /* PBXTargetDependency */,
+			);
+			name = TestAppTests;
+			productName = TestAppTests;
+			productReference = 0CAD24961D608485007EE8C0 /* TestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0CAD24A01D608486007EE8C0 /* TestAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CAD24AE1D608486007EE8C0 /* Build configuration list for PBXNativeTarget "TestAppUITests" */;
+			buildPhases = (
+				0CAD249D1D608486007EE8C0 /* Sources */,
+				0CAD249E1D608486007EE8C0 /* Frameworks */,
+				0CAD249F1D608486007EE8C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CAD24A31D608486007EE8C0 /* PBXTargetDependency */,
+			);
+			name = TestAppUITests;
+			productName = TestAppUITests;
+			productReference = 0CAD24A11D608486007EE8C0 /* TestAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		0CC5D2281CFC7F99001A48D6 /* Rime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CC5D2561CFC7F99001A48D6 /* Build configuration list for PBXNativeTarget "Rime" */;
+			buildPhases = (
+				0CC5D2251CFC7F99001A48D6 /* Sources */,
+				0CC5D2261CFC7F99001A48D6 /* Frameworks */,
+				0CC5D2271CFC7F99001A48D6 /* Resources */,
+				0CB0ED9B1CFF0D2400F2ACD9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C93D6E11CFF171F00DDFCD0 /* PBXTargetDependency */,
+			);
+			name = Rime;
+			productName = Rime;
+			productReference = 0CC5D2291CFC7F99001A48D6 /* Rime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CC5D2411CFC7F99001A48D6 /* RimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CC5D2591CFC7F99001A48D6 /* Build configuration list for PBXNativeTarget "RimeTests" */;
+			buildPhases = (
+				0CC5D23E1CFC7F99001A48D6 /* Sources */,
+				0CC5D23F1CFC7F99001A48D6 /* Frameworks */,
+				0CC5D2401CFC7F99001A48D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CC5D2441CFC7F99001A48D6 /* PBXTargetDependency */,
+			);
+			name = RimeTests;
+			productName = RimeTests;
+			productReference = 0CC5D2421CFC7F99001A48D6 /* RimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0CC5D24C1CFC7F99001A48D6 /* RimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CC5D25C1CFC7F99001A48D6 /* Build configuration list for PBXNativeTarget "RimeUITests" */;
+			buildPhases = (
+				0CC5D2491CFC7F99001A48D6 /* Sources */,
+				0CC5D24A1CFC7F99001A48D6 /* Frameworks */,
+				0CC5D24B1CFC7F99001A48D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CC5D24F1CFC7F99001A48D6 /* PBXTargetDependency */,
+			);
+			name = RimeUITests;
+			productName = RimeUITests;
+			productReference = 0CC5D24D1CFC7F99001A48D6 /* RimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CC5D2211CFC7F99001A48D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = jimmy54;
+				TargetAttributes = {
+					0C93D6DA1CFF171E00DDFCD0 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = XU7TRD55DH;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					0CAD247D1D608484007EE8C0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					0CAD24951D608485007EE8C0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0CAD247D1D608484007EE8C0;
+					};
+					0CAD24A01D608486007EE8C0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0CAD247D1D608484007EE8C0;
+					};
+					0CC5D2281CFC7F99001A48D6 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = XU7TRD55DH;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					0CC5D2411CFC7F99001A48D6 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 0CC5D2281CFC7F99001A48D6;
+					};
+					0CC5D24C1CFC7F99001A48D6 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 0CC5D2281CFC7F99001A48D6;
+					};
+				};
+			};
+			buildConfigurationList = 0CC5D2241CFC7F99001A48D6 /* Build configuration list for PBXProject "Rime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CC5D2201CFC7F99001A48D6;
+			productRefGroup = 0CC5D22A1CFC7F99001A48D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CC5D2281CFC7F99001A48D6 /* Rime */,
+				0CC5D2411CFC7F99001A48D6 /* RimeTests */,
+				0CC5D24C1CFC7F99001A48D6 /* RimeUITests */,
+				0C93D6DA1CFF171E00DDFCD0 /* swiftKeyBoard */,
+				0CAD247D1D608484007EE8C0 /* TestApp */,
+				0CAD24951D608485007EE8C0 /* TestAppTests */,
+				0CAD24A01D608486007EE8C0 /* TestAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C93D6D91CFF171E00DDFCD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD1535B1D2CF558003259B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAD247C1D608484007EE8C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAD24901D608485007EE8C0 /* LaunchScreen.storyboard in Resources */,
+				0CAD248D1D608485007EE8C0 /* Assets.xcassets in Resources */,
+				0CAD248B1D608485007EE8C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAD24941D608485007EE8C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAD249F1D608486007EE8C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC5D2271CFC7F99001A48D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC5D23C1CFC7F99001A48D6 /* LaunchScreen.storyboard in Resources */,
+				0CD1535C1D2CF9B9003259B8 /* XIME in Resources */,
+				0CFD550B1D729ADC00646CA9 /* SelectInputViewController.xib in Resources */,
+				0CC5D2391CFC7F99001A48D6 /* Assets.xcassets in Resources */,
+				0CAD24791D608307007EE8C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC5D2401CFC7F99001A48D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC5D24B1CFC7F99001A48D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CD1535D1D2CFAB6003259B8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/SnapKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C93D6D71CFF171E00DDFCD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD1531E1D2CF27D003259B8 /* KeyboardLayout.swift in Sources */,
+				0CD153471D2CF2BA003259B8 /* RimeTypeDef.m in Sources */,
+				0CD153481D2CF2BA003259B8 /* RimeWrapper.m in Sources */,
+				0CD153261D2CF27D003259B8 /* Logger.swift in Sources */,
+				0CD153321D2CF27D003259B8 /* DefaultSettings.swift in Sources */,
+				0CD153241D2CF27D003259B8 /* CandidatesBanner.swift in Sources */,
+				0CD1532D1D2CF27D003259B8 /* TypingLabel.swift in Sources */,
+				0CD1532F1D2CF27D003259B8 /* DirectionEnum.swift in Sources */,
+				0CD153361D2CF27D003259B8 /* KeyboardConnector.swift in Sources */,
+				0CD153211D2CF27D003259B8 /* Catboard.swift in Sources */,
+				0CD153381D2CF27D003259B8 /* KeyboardKeyBackground.swift in Sources */,
+				0CD153311D2CF27D003259B8 /* Utilities.swift in Sources */,
+				0CD153271D2CF27D003259B8 /* MyCollectionViewFlowLayout.swift in Sources */,
+				0CD1531D1D2CF27D003259B8 /* KeyboardInputTraits.swift in Sources */,
+				0CD153251D2CF27D003259B8 /* CandidateTableCellTableViewCell.swift in Sources */,
+				0CD153231D2CF27D003259B8 /* CandidateCell.swift in Sources */,
+				0CD153221D2CF27D003259B8 /* CatboardBanner.swift in Sources */,
+				0CD1531C1D2CF27D003259B8 /* ForwardingView.swift in Sources */,
+				0CD153301D2CF27D003259B8 /* KeyboardModel.swift in Sources */,
+				0CD153391D2CF27D003259B8 /* Shapes.swift in Sources */,
+				0CD153461D2CF2BA003259B8 /* NSString+UTF8Utils.m in Sources */,
+				0CD1532E1D2CF27D003259B8 /* DefaultKeyboard.swift in Sources */,
+				0CD153351D2CF27D003259B8 /* ImageKey.swift in Sources */,
+				0CD1531F1D2CF27D003259B8 /* KeyboardViewController.swift in Sources */,
+				0CD153341D2CF27D003259B8 /* ExtraView.swift in Sources */,
+				0CD1532C1D2CF27D003259B8 /* StringExtension.swift in Sources */,
+				0CD153371D2CF27D003259B8 /* KeyboardKey.swift in Sources */,
+				0CD153201D2CF27D003259B8 /* CandidateModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAD247A1D608484007EE8C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAD24881D608485007EE8C0 /* ViewController.m in Sources */,
+				0CAD24851D608485007EE8C0 /* AppDelegate.m in Sources */,
+				0CAD24821D608485007EE8C0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAD24921D608485007EE8C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAD249B1D608486007EE8C0 /* TestAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAD249D1D608486007EE8C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAD24A61D608486007EE8C0 /* TestAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC5D2251CFC7F99001A48D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CFD550C1D729B6200646CA9 /* RimeTypeDef.m in Sources */,
+				0CFD550D1D729B6200646CA9 /* RimeWrapper.m in Sources */,
+				0CFD55161D729D7D00646CA9 /* NSString+Path.m in Sources */,
+				0CC5D2341CFC7F99001A48D6 /* ViewController.m in Sources */,
+				0CFD550A1D729ADC00646CA9 /* SelectInputViewController.m in Sources */,
+				0CC5D2311CFC7F99001A48D6 /* AppDelegate.m in Sources */,
+				0CC5D22E1CFC7F99001A48D6 /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC5D23E1CFC7F99001A48D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC5D2471CFC7F99001A48D6 /* RimeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC5D2491CFC7F99001A48D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC5D2521CFC7F99001A48D6 /* RimeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C93D6E11CFF171F00DDFCD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C93D6DA1CFF171E00DDFCD0 /* swiftKeyBoard */;
+			targetProxy = 0C93D6E01CFF171F00DDFCD0 /* PBXContainerItemProxy */;
+		};
+		0CAD24981D608485007EE8C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CAD247D1D608484007EE8C0 /* TestApp */;
+			targetProxy = 0CAD24971D608485007EE8C0 /* PBXContainerItemProxy */;
+		};
+		0CAD24A31D608486007EE8C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CAD247D1D608484007EE8C0 /* TestApp */;
+			targetProxy = 0CAD24A21D608486007EE8C0 /* PBXContainerItemProxy */;
+		};
+		0CC5D2441CFC7F99001A48D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CC5D2281CFC7F99001A48D6 /* Rime */;
+			targetProxy = 0CC5D2431CFC7F99001A48D6 /* PBXContainerItemProxy */;
+		};
+		0CC5D24F1CFC7F99001A48D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CC5D2281CFC7F99001A48D6 /* Rime */;
+			targetProxy = 0CC5D24E1CFC7F99001A48D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0CAD24771D608307007EE8C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CAD24781D608307007EE8C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0CAD24891D608485007EE8C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CAD248A1D608485007EE8C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0CAD248E1D608485007EE8C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CAD248F1D608485007EE8C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0CC5D23A1CFC7F99001A48D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CC5D23B1CFC7F99001A48D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C93D6E41CFF171F00DDFCD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = swiftKeyBoard/swiftKeyBoard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RimeKeyboard",
+					"$(PROJECT_DIR)/swiftKeyBoard",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = swiftKeyBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.Rime.swiftKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C93D6E51CFF171F00DDFCD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = swiftKeyBoard/swiftKeyBoard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RimeKeyboard",
+					"$(PROJECT_DIR)/swiftKeyBoard",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = swiftKeyBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.Rime.swiftKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
+			};
+			name = Release;
+		};
+		0CAD24A91D608486007EE8C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.TestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0CAD24AA1D608486007EE8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.TestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0CAD24AC1D608486007EE8C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.TestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
+			};
+			name = Debug;
+		};
+		0CAD24AD1D608486007EE8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.TestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
+			};
+			name = Release;
+		};
+		0CAD24AF1D608486007EE8C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.TestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestApp;
+			};
+			name = Debug;
+		};
+		0CAD24B01D608486007EE8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.TestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestApp;
+			};
+			name = Release;
+		};
+		0CC5D2541CFC7F99001A48D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CC5D2551CFC7F99001A48D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CC5D2571CFC7F99001A48D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = Rime/Rime.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/jimmy54/Documents/job/T9/build_boot_for_iOS_script/ios/build/arm64,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../librime/librime/include",
+					/Users/jimmy54/Documents/job/T9/build_boot_for_iOS_script/ios/prefix/include,
+				);
+				INFOPLIST_FILE = Rime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/jimmy54/Documents/job/T9/build_boot_for_iOS_script/ios/prefix/lib,
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-lboost_system",
+					"-lboost_thread",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.Rime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		0CC5D2581CFC7F99001A48D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = Rime/Rime.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/jimmy54/Documents/job/T9/build_boot_for_iOS_script/ios/build/arm64,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../librime/librime/include",
+					/Users/jimmy54/Documents/job/T9/build_boot_for_iOS_script/ios/prefix/include,
+				);
+				INFOPLIST_FILE = Rime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/jimmy54/Documents/job/T9/build_boot_for_iOS_script/ios/prefix/lib,
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-lboost_system",
+					"-lboost_thread",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.Rime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		0CC5D25A1CFC7F99001A48D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.RimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rime.app/Rime";
+			};
+			name = Debug;
+		};
+		0CC5D25B1CFC7F99001A48D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.RimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rime.app/Rime";
+			};
+			name = Release;
+		};
+		0CC5D25D1CFC7F99001A48D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.RimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Rime;
+			};
+			name = Debug;
+		};
+		0CC5D25E1CFC7F99001A48D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy54.RimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Rime;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C93D6E31CFF171F00DDFCD0 /* Build configuration list for PBXNativeTarget "swiftKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C93D6E41CFF171F00DDFCD0 /* Debug */,
+				0C93D6E51CFF171F00DDFCD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CAD24A81D608486007EE8C0 /* Build configuration list for PBXNativeTarget "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CAD24A91D608486007EE8C0 /* Debug */,
+				0CAD24AA1D608486007EE8C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CAD24AB1D608486007EE8C0 /* Build configuration list for PBXNativeTarget "TestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CAD24AC1D608486007EE8C0 /* Debug */,
+				0CAD24AD1D608486007EE8C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CAD24AE1D608486007EE8C0 /* Build configuration list for PBXNativeTarget "TestAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CAD24AF1D608486007EE8C0 /* Debug */,
+				0CAD24B01D608486007EE8C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CC5D2241CFC7F99001A48D6 /* Build configuration list for PBXProject "Rime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC5D2541CFC7F99001A48D6 /* Debug */,
+				0CC5D2551CFC7F99001A48D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CC5D2561CFC7F99001A48D6 /* Build configuration list for PBXNativeTarget "Rime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC5D2571CFC7F99001A48D6 /* Debug */,
+				0CC5D2581CFC7F99001A48D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CC5D2591CFC7F99001A48D6 /* Build configuration list for PBXNativeTarget "RimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC5D25A1CFC7F99001A48D6 /* Debug */,
+				0CC5D25B1CFC7F99001A48D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CC5D25C1CFC7F99001A48D6 /* Build configuration list for PBXNativeTarget "RimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC5D25D1CFC7F99001A48D6 /* Debug */,
+				0CC5D25E1CFC7F99001A48D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CC5D2211CFC7F99001A48D6 /* Project object */;
+}

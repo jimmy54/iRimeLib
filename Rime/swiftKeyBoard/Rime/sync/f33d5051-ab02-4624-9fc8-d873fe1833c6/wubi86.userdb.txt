@@ -1,0 +1,6 @@
+# Rime user dictionary
+#@/db_name	wubi86.userdb
+#@/db_type	userdb
+#@/rime_version	1.2.9
+#@/tick	0
+#@/user_id	f33d5051-ab02-4624-9fc8-d873fe1833c6

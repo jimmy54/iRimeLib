@@ -1,0 +1,28 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin.userdb
+#@/db_type	userdb
+#@/rime_version	1.2.9
+#@/tick	32
+#@/user_id	f33d5051-ab02-4624-9fc8-d873fe1833c6
+ai 	愛	c=3 d=2.9218 t=13
+bu 	不	c=1 d=1 t=31
+chan pin 	產品	c=1 d=1 t=16
+dai ma 	代碼	c=1 d=1 t=23
+fu wu duan 	服務端	c=2 d=1.9802 t=21
+ji dian 	幾點	c=1 d=1 t=5
+jia 	家	c=1 d=1 t=10
+ke yi 	可以	c=1 d=1 t=18
+keng 	坑	c=1 d=1 t=29
+kong zhi 	控制	c=2 d=1.97531 t=24
+lei 	類	c=1 d=1 t=4
+ma 	嗎	c=2 d=1.97531 t=20
+ne 	呢	c=1 d=1 t=25
+ni 	你	c=2 d=1.92774 t=27
+ni hao ma 	你好嗎	c=1 d=1 t=6
+qu 	去	c=2 d=1.9802 t=7
+tai da 	太大	c=1 d=1 t=30
+wan quan 	完全	c=2 d=1.92774 t=26
+wo 	我	c=3 d=2.91238 t=14
+zhe ge 	這個	c=1 d=1 t=28
+zou 	走	c=1 d=1 t=32
+zuo 	做	c=1 d=1 t=22

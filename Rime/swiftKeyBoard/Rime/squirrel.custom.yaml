@@ -1,0 +1,6 @@
+patch:
+  style:
+    font_point: 16
+    color_scheme: native
+    horizontal: true
+    corner_radius: 10

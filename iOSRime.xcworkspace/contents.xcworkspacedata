@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Rime/Rime.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:librime/librime.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libopencc/libopencc.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libmarisa-trie/libmarisa-trie.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libyaml/libyaml.xcodeproj">
+   </FileRef>
+</Workspace>
