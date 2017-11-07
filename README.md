@@ -13,10 +13,9 @@
 
 ## 主要開發者和代碼貢獻者：
 
-- [Mrdongyueyue](https://github.com/Mrdongyueyue)
+
 - [daaiwusheng](https://github.com/daaiwusheng)
-- [bingFly](https://github.com/bingFly)
-- [Bighit](https://github.com/Bighit)
+
 
 
 
