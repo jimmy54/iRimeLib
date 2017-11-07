@@ -39,13 +39,6 @@
  - [LevelDB](https://github.com/google/leveldb) (New BSD License)
    - [snappy](https://google.github.io/snappy/)(BSD License)
 
-## 編譯/Build
-
-使用resilio同步软件把庫（LibAndResource）同步下來，并放到iRime的目錄下麵。
-
-同步KEY: B7Q4HQWXWHRHBWHZMHSXXOKBLKQ4D4UTG
-
-resilio软件下载地址：[點擊去下载](https://www.resilio.com/)
 
 ## 鳴謝/Credits
 - [Rime]: [佛振](https://github.com/lotem)
